@@ -1,0 +1,250 @@
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+/* ===== SMALL DEVICES (< 640px) ===== */
+@media (max-width: 639px) {
+    body {
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+
+    .settings-container {
+        max-width: 100%;
+        border-radius: var(--radius-md);
+    }
+
+    .header-section {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .header-section h1 {
+        font-size: 1.5rem;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .header-section p {
+        font-size: 0.8rem;
+    }
+
+    .header-emojis {
+        font-size: 2rem;
+        gap: var(--spacing-sm);
+        margin-bottom: var(--spacing-md);
+    }
+
+    .theme-toggle {
+        width: 32px;
+        height: 32px;
+        top: var(--spacing-md);
+        right: var(--spacing-md);
+    }
+
+    .theme-toggle svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .section-title {
+        padding: var(--spacing-md) var(--spacing-md) var(--spacing-sm);
+        font-size: 1rem;
+    }
+
+    .info-list-item {
+        gap: var(--spacing-md);
+        padding: var(--spacing-md);
+        flex-wrap: wrap;
+    }
+
+    .info-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .info-label {
+        font-size: 0.8rem;
+    }
+
+    .info-value {
+        font-size: 0.95rem;
+    }
+
+    /* Rofi menu - fuller screen on mobile */
+    .rofi-menu {
+        width: 90vw;
+        max-width: 95vw;
+        max-height: 85vh;
+        padding: var(--spacing-md);
+    }
+
+    .rofi-search {
+        padding: var(--spacing-md) var(--spacing-md);
+        margin-bottom: var(--spacing-md);
+        font-size: 1rem;
+    }
+
+    .rofi-menu-item {
+        padding: var(--spacing-md);
+        margin: var(--spacing-xs) 0;
+        font-size: 0.95rem;
+    }
+
+    footer {
+        padding: var(--spacing-md);
+    }
+
+    footer p {
+        font-size: 0.7rem;
+    }
+}
+
+/* ===== MEDIUM DEVICES (640px - 1024px) ===== */
+@media (min-width: 640px) and (max-width: 1024px) {
+    body {
+        padding: var(--spacing-xl) var(--spacing-lg);
+    }
+
+    .settings-container {
+        max-width: 550px;
+    }
+
+    .header-section {
+        padding: var(--spacing-xl) var(--spacing-lg);
+    }
+
+    .header-section h1 {
+        font-size: 1.6rem;
+    }
+
+    .header-section p {
+        font-size: 0.9rem;
+    }
+
+    .header-emojis {
+        font-size: 2.2rem;
+    }
+
+    .info-list-item {
+        padding: var(--spacing-lg) var(--spacing-lg);
+    }
+}
+
+/* ===== LARGE DEVICES (> 1024px) ===== */
+@media (min-width: 1025px) {
+    body {
+        padding: var(--spacing-xl) var(--spacing-lg);
+    }
+
+    .settings-container {
+        max-width: 650px;
+    }
+}
+
+/* ===== TABLET PORTRAIT (768px - 1024px) ===== */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .settings-container {
+        max-width: 500px;
+    }
+}
+
+/* ===== LANDSCAPE MODE ===== */
+@media (max-height: 600px) {
+    .header-section {
+        padding: var(--spacing-lg) var(--spacing-lg);
+    }
+
+    .header-section h1 {
+        font-size: 1.4rem;
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .header-emojis {
+        font-size: 1.8rem;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .info-list-item {
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+
+    .rofi-menu {
+        max-height: 90vh;
+    }
+}
+
+/* ===== HIGH PIXEL DENSITY (Retina) ===== */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Thinner shadows and borders for better appearance */
+    .settings-container {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .rofi-menu {
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* ===== TOUCH DEVICE OPTIMIZATION ===== */
+@media (hover: none) and (pointer: coarse) {
+    .info-list-item {
+        padding: var(--spacing-lg) var(--spacing-lg);
+    }
+
+    button {
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+    .rofi-menu-item {
+        padding: var(--spacing-lg) var(--spacing-lg);
+        border-radius: var(--radius-sm);
+    }
+
+    .theme-toggle {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+/* ===== PREFERS REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ===== DARK MODE PREFERENCE ===== */
+@media (prefers-color-scheme: dark) {
+    /* Fallback for dark mode - can be extended based on theme */
+    body {
+        background-color: var(--sub-alt-color);
+    }
+}
+
+/* ===== VERY SMALL DEVICES (< 360px) ===== */
+@media (max-width: 359px) {
+    .header-section h1 {
+        font-size: 1.3rem;
+    }
+
+    .header-section p {
+        font-size: 0.75rem;
+    }
+
+    .header-emojis {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 0.95rem;
+    }
+
+    .info-label {
+        font-size: 0.75rem;
+    }
+
+    .info-value {
+        font-size: 0.9rem;
+    }
+}

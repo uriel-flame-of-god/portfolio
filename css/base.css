@@ -1,0 +1,60 @@
+/* =========================================
+   BASE GLOBAL STYLES
+   ========================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--sub-alt-color);
+    color: var(--text-color);
+    padding: var(--spacing-lg) var(--spacing-md);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    transition: background-color var(--transition-normal), 
+                color var(--transition-normal);
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+}
+
+/* Remove default styles */
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+input, textarea, select {
+    font-family: inherit;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+    outline: 2px solid var(--main-color);
+    outline-offset: 2px;
+}
+
+/* Selection styling */
+::selection {
+    background-color: var(--main-color);
+    color: var(--header-text);
+}
+
+::-moz-selection {
+    background-color: var(--main-color);
+    color: var(--header-text);
+}

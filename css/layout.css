@@ -1,0 +1,128 @@
+/* =========================================
+   LAYOUT & CONTAINER STYLES
+   ========================================= */
+
+.settings-container {
+    width: 100%;
+    max-width: 600px;
+    background: var(--bg-color);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    margin-bottom: var(--spacing-xl);
+    transition: background-color var(--transition-normal);
+    position: relative;
+}
+
+/* =========================================
+   HEADER SECTION
+   ========================================= */
+
+.header-section {
+    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+    color: var(--header-text);
+    padding: var(--spacing-xl) var(--spacing-lg);
+    text-align: center;
+    position: relative;
+    transition: background var(--transition-normal);
+}
+
+.header-section h1 {
+    font-weight: var(--font-weight-bold);
+    font-size: 1.8rem;
+    margin-bottom: var(--spacing-sm);
+    color: inherit;
+    line-height: 1.2;
+}
+
+.header-section p {
+    font-weight: var(--font-weight-light);
+    opacity: 0.9;
+    color: inherit;
+    font-size: var(--font-size-sm);
+}
+
+.header-emojis {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+/* =========================================
+   THEME TOGGLE BUTTON
+   ========================================= */
+
+.theme-toggle {
+    position: absolute;
+    top: var(--spacing-lg);
+    right: var(--spacing-lg);
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform var(--transition-fast),
+                background var(--transition-fast);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.theme-toggle:active {
+    transform: scale(0.95);
+}
+
+.theme-toggle svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2;
+}
+
+/* =========================================
+   SECTION TITLES
+   ========================================= */
+
+.section-title {
+    padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-md);
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--main-color);
+    border-top: 5px solid var(--sub-alt-color);
+    transition: border-color var(--transition-normal), 
+                color var(--transition-normal);
+}
+
+/* =========================================
+   CARD CONTENT
+   ========================================= */
+
+.card-content {
+    padding: 0;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    color: var(--error-color);
+    text-align: center;
+    padding: var(--spacing-lg);
+}
+
+footer p {
+    opacity: 0.7;
+    font-size: var(--font-size-sm);
+}
