@@ -4,12 +4,12 @@
 
 /* Global cursor with smooth transition */
 html {
-    cursor: url('./cursor/macos/Normal.cur') 4 3, auto;
+    cursor: url('../cursor/macos/Normal.cur') 4 3, auto;
     cursor-behavior: auto;
 }
 
 body {
-    cursor: url('./cursor/macos/Normal.cur') 4 3, auto;
+    cursor: url('../cursor/macos/Normal.cur') 4 3, auto;
 }
 
 /* =========================================
@@ -22,7 +22,7 @@ input[type="submit"],
 input[type="button"],
 input[type="reset"],
 [role="button"] {
-    cursor: url('./cursor/macos/Closehand.cur') 8 3, pointer;
+    cursor: url('../cursor/macos/Closehand.cur') 8 3, pointer;
     transition: cursor var(--transition-fast);
 }
 
@@ -31,7 +31,7 @@ input[type="submit"]:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 [role="button"]:hover {
-    cursor: url('./cursor/macos/Closehand.cur') 8 3, pointer;
+    cursor: url('../cursor/macos/Closehand.cur') 8 3, pointer;
 }
 
 button:active,
@@ -39,7 +39,7 @@ input[type="submit"]:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 [role="button"]:active {
-    cursor: url('./cursor/macos/Move.cur') 10 10, grabbing;
+    cursor: url('../cursor/macos/Move.cur') 10 10, grabbing;
 }
 
 /* =========================================
@@ -47,11 +47,11 @@ input[type="reset"]:active,
    ========================================= */
 
 a {
-    cursor: url('./cursor/macos/Link.cur') 4 3, pointer;
+    cursor: url('../cursor/macos/Link.cur') 4 3, pointer;
 }
 
 a:hover {
-    cursor: url('./cursor/macos/Link.cur') 4 3, pointer;
+    cursor: url('../cursor/macos/Link.cur') 4 3, pointer;
 }
 
 /* =========================================
@@ -65,7 +65,7 @@ input[type="search"],
 input[type="url"],
 textarea,
 [contenteditable="true"] {
-    cursor: url('./cursor/macos/Text.cur') 10 10, text;
+    cursor: url('../cursor/macos/Text.cur') 10 10, text;
 }
 
 input[type="text"]:focus,
@@ -75,7 +75,7 @@ input[type="search"]:focus,
 input[type="url"]:focus,
 textarea:focus,
 [contenteditable="true"]:focus {
-    cursor: url('./cursor/macos/Text.cur') 10 10, text;
+    cursor: url('../cursor/macos/Text.cur') 10 10, text;
 }
 
 /* =========================================
@@ -84,7 +84,7 @@ textarea:focus,
 
 input[type="checkbox"],
 input[type="radio"] {
-    cursor: url('./cursor/macos/Precision.cur') 10 10, pointer;
+    cursor: url('../cursor/macos/Precision.cur') 10 10, pointer;
 }
 
 /* =========================================
@@ -92,7 +92,7 @@ input[type="radio"] {
    ========================================= */
 
 select {
-    cursor: url('./cursor/macos/Closehand.cur') 8 3, pointer;
+    cursor: url('../cursor/macos/Closehand.cur') 8 3, pointer;
 }
 
 /* =========================================
@@ -104,7 +104,7 @@ input:disabled,
 select:disabled,
 textarea:disabled,
 [aria-disabled="true"] {
-    cursor: url('./cursor/macos/Unavailable.cur') 10 10, not-allowed;
+    cursor: url('../cursor/macos/Unavailable.cur') 10 10, not-allowed;
 }
 
 /* =========================================
@@ -112,11 +112,11 @@ textarea:disabled,
    ========================================= */
 
 .theme-toggle {
-    cursor: url('./cursor/macos/Closehand.cur') 8 3, pointer;
+    cursor: url('../cursor/macos/Closehand.cur') 8 3, pointer;
 }
 
 .theme-toggle:active {
-    cursor: url('./cursor/macos/Move.cur') 10 10, grabbing;
+    cursor: url('../cursor/macos/Move.cur') 10 10, grabbing;
 }
 
 /* =========================================
@@ -124,12 +124,12 @@ textarea:disabled,
    ========================================= */
 
 .rofi-menu-item {
-    cursor: url('./cursor/macos/Closehand.cur') 8 3, pointer;
+    cursor: url('../cursor/macos/Closehand.cur') 8 3, pointer;
 }
 
 .rofi-menu-item:hover,
 .rofi-menu-item.is-selected {
-    cursor: url('./cursor/macos/Link.cur') 4 3, pointer;
+    cursor: url('../cursor/macos/Link.cur') 4 3, pointer;
 }
 
 /* =========================================
@@ -137,7 +137,7 @@ textarea:disabled,
    ========================================= */
 
 [draggable="true"] {
-    cursor: url('./cursor/macos/Move.cur') 10 10, grab;
+    cursor: url('../cursor/macos/Move.cur') 10 10, grab;
 }
 
 [draggable="true"]:active {
@@ -151,7 +151,7 @@ textarea:disabled,
 [title],
 .tooltip,
 [aria-describedby] {
-    cursor: url('./cursor/macos/Help.cur') 10 3, help;
+    cursor: url('../cursor/macos/Help.cur') 10 3, help;
 }
 
 /* =========================================
@@ -159,11 +159,11 @@ textarea:disabled,
    ========================================= */
 
 .info-list-item {
-    cursor: url('./cursor/macos/Normal.cur') 4 3, auto;
+    cursor: url('../cursor/macos/Normal.cur') 4 3, auto;
 }
 
 .info-list-item:hover {
-    cursor: url('./cursor/macos/Normal.cur') 4 3, auto;
+    cursor: url('../cursor/macos/Normal.cur') 4 3, auto;
 }
 
 a.info-list-item {
@@ -171,16 +171,16 @@ a.info-list-item {
 }
 
 a.info-list-item:hover {
-    cursor: url('./cursor/macos/Link.cur') 4 3, pointer;
+    cursor: url('../cursor/macos/Link.cur') 4 3, pointer;
 }
 
 /* =========================================
    CURSOR ANIMATION SUPPORT
    ========================================= */
 
-@supports (cursor: url('./cursor/macos/Busy.ani'), auto) {
+@supports (cursor: url('../cursor/macos/Busy.ani'), auto) {
     .loading,
     [aria-busy="true"] {
-        cursor: url('./cursor/macos/Busy.ani'), auto;
+        cursor: url('../cursor/macos/Busy.ani'), auto;
     }
 }
