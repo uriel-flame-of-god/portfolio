@@ -1,0 +1,186 @@
+/* =========================================
+   CURSOR SYSTEM STYLES
+   ========================================= */
+
+/* Global cursor with smooth transition */
+html {
+    cursor: url('./cursor/macos/Normal.cur') 4 3, auto;
+    cursor-behavior: auto;
+}
+
+body {
+    cursor: url('./cursor/macos/Normal.cur') 4 3, auto;
+}
+
+/* =========================================
+   INTERACTIVE ELEMENTS
+   ========================================= */
+
+/* Buttons */
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+[role="button"] {
+    cursor: url('./cursor/macos/Closehand.cur') 8 3, pointer;
+    transition: cursor var(--transition-fast);
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+[role="button"]:hover {
+    cursor: url('./cursor/macos/Closehand.cur') 8 3, pointer;
+}
+
+button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+[role="button"]:active {
+    cursor: url('./cursor/macos/Move.cur') 10 10, grabbing;
+}
+
+/* =========================================
+   LINKS
+   ========================================= */
+
+a {
+    cursor: url('./cursor/macos/Link.cur') 4 3, pointer;
+}
+
+a:hover {
+    cursor: url('./cursor/macos/Link.cur') 4 3, pointer;
+}
+
+/* =========================================
+   TEXT INPUTS
+   ========================================= */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="url"],
+textarea,
+[contenteditable="true"] {
+    cursor: url('./cursor/macos/Text.cur') 10 10, text;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="url"]:focus,
+textarea:focus,
+[contenteditable="true"]:focus {
+    cursor: url('./cursor/macos/Text.cur') 10 10, text;
+}
+
+/* =========================================
+   CHECKBOXES & RADIO BUTTONS
+   ========================================= */
+
+input[type="checkbox"],
+input[type="radio"] {
+    cursor: url('./cursor/macos/Precision.cur') 10 10, pointer;
+}
+
+/* =========================================
+   SELECT DROPDOWNS
+   ========================================= */
+
+select {
+    cursor: url('./cursor/macos/Closehand.cur') 8 3, pointer;
+}
+
+/* =========================================
+   DISABLED ELEMENTS
+   ========================================= */
+
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled,
+[aria-disabled="true"] {
+    cursor: url('./cursor/macos/Unavailable.cur') 10 10, not-allowed;
+}
+
+/* =========================================
+   THEME TOGGLE BUTTON
+   ========================================= */
+
+.theme-toggle {
+    cursor: url('./cursor/macos/Closehand.cur') 8 3, pointer;
+}
+
+.theme-toggle:active {
+    cursor: url('./cursor/macos/Move.cur') 10 10, grabbing;
+}
+
+/* =========================================
+   ROFI MENU ITEMS
+   ========================================= */
+
+.rofi-menu-item {
+    cursor: url('./cursor/macos/Closehand.cur') 8 3, pointer;
+}
+
+.rofi-menu-item:hover,
+.rofi-menu-item.is-selected {
+    cursor: url('./cursor/macos/Link.cur') 4 3, pointer;
+}
+
+/* =========================================
+   RESIZABLE ELEMENTS
+   ========================================= */
+
+[draggable="true"] {
+    cursor: url('./cursor/macos/Move.cur') 10 10, grab;
+}
+
+[draggable="true"]:active {
+    cursor: url('./cursor/macos/Move.cur') 10 10, grabbing;
+}
+
+/* =========================================
+   HELP & TOOLTIPS
+   ========================================= */
+
+[title],
+.tooltip,
+[aria-describedby] {
+    cursor: url('./cursor/macos/Help.cur') 10 3, help;
+}
+
+/* =========================================
+   INFO ITEMS ENHANCEMENT
+   ========================================= */
+
+.info-list-item {
+    cursor: url('./cursor/macos/Normal.cur') 4 3, auto;
+}
+
+.info-list-item:hover {
+    cursor: url('./cursor/macos/Normal.cur') 4 3, auto;
+}
+
+a.info-list-item {
+    cursor: url('./cursor/macos/Link.cur') 4 3, pointer;
+}
+
+a.info-list-item:hover {
+    cursor: url('./cursor/macos/Link.cur') 4 3, pointer;
+}
+
+/* =========================================
+   CURSOR ANIMATION SUPPORT
+   ========================================= */
+
+@supports (cursor: url('./cursor/macos/Busy.ani'), auto) {
+    .loading,
+    [aria-busy="true"] {
+        cursor: url('./cursor/macos/Busy.ani'), auto;
+    }
+}
