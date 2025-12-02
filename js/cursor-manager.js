@@ -4,7 +4,7 @@
  */
 
 const CursorManager = (() => {
-    const cursorPath = './cursor/macos/';
+    const cursorPath = '../cursor/macos/';
     
     // Cursor definitions with fallback and scale
     const cursors = {
